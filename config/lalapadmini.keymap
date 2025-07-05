@@ -216,7 +216,7 @@
 &trans  &trans  &trans  &trans  &trans  &kp LC(W)           &kp F5               &kp LC(LS(TAB))  &kp LC(TAB)     &trans
 &trans  &trans  &trans  &trans  &trans  &mkp MB3            &mkp MB1             &mkp MB2         &mo 5           &none
 &trans  &trans  &trans  &trans  &trans  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &msc SCRL_UP     &msc SCRL_DOWN  &trans
-&trans  &trans          &trans  &trans  &trans              &trans                                &trans          &trans
+&trans  &trans          &trans  &trans  &trans              &kp LS(LC(I))                         &trans          &trans
             >;
         };
 
