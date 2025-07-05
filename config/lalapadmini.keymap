@@ -23,14 +23,16 @@
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
         <&zip_xy_scaler 2 1>;
-        //<&zip_temp_layer MOUSE_R_LAYER 300>;
+
+    //<&zip_temp_layer MOUSE_R_LAYER 300>;
 
     lowspeedmode {
         layers = <SECONDARY_LAYER>;
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
             <&zip_xy_scaler 3 5>;
-            //<&zip_temp_layer MOUSE_R_LAYER 300>;
+
+        //<&zip_temp_layer MOUSE_R_LAYER 300>;
     };
 
     scroller {
@@ -46,14 +48,16 @@
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
         <&zip_xy_scaler 2 1>;
-        //<&zip_temp_layer MOUSE_L_LAYER 300>;
+
+    //<&zip_temp_layer MOUSE_L_LAYER 300>;
 
     lowspeedmode {
         layers = <TERTIARY_LAYER>;
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
             <&zip_xy_scaler 3 4>;
-            //<&zip_temp_layer MOUSE_L_LAYER 300>;
+
+        //<&zip_temp_layer MOUSE_L_LAYER 300>;
     };
 
     scroller {
@@ -68,7 +72,6 @@
 &mt { quick-tap-ms = <200>; };
 
 &lt { quick-tap-ms = <200>; };
-
 
 / {
     behaviors {
@@ -169,7 +172,6 @@
         };
     };
 
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -178,7 +180,7 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp Q      &kp W      &kp E  &kp R           &kp T        &kp Y          &kp U        &kp I      &kp O            &kp P
+&td0       &kp W      &kp E  &kp R           &kp T        &kp Y          &kp U        &kp I      &kp O            &kp P
 &lt 2 A    &kp S      &kp D  &kp F           &kp G        &kp H          &kp J        &kp K      &kp L            &mo 4
 &kp Z      &kp X      &kp C  &kp V           &kp B        &kp N          &kp M        &kp COMMA  &kp PERIOD       &mt RSHIFT SLASH
 &kp LCTRL  &kp GRAVE         &kp LEFT_SHIFT  &lt 1 SPACE  &kp BACKSPACE  &lt 2 ENTER             &kp RIGHT_SHIFT  &lt 3 ESCAPE
