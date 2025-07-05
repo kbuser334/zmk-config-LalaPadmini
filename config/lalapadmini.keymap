@@ -69,6 +69,7 @@
 
 &lt { quick-tap-ms = <200>; };
 
+
 / {
     behaviors {
         // Encoder to Mouse Scroll
@@ -158,6 +159,16 @@
             label = "MACRO_LTAP";
         };
     };
+
+    behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp Q>, <&kp GRAVE>;
+        };
+    };
+
 
     keymap {
         compatible = "zmk,keymap";
