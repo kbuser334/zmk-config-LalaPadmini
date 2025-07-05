@@ -213,10 +213,10 @@
         MOUSE_R_LAYER {
             display-name = "mouse_r_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &mkp MCLK  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &MACRO_LTAP  &mkp LCLK  &mkp RCLK  &mo 5
-&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4     &none      &mkp MB5   &trans
-&trans  &trans          &trans  &trans  &trans  &trans                  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &kp LC(W)           &kp F5               &kp LC(LS(TAB))  &kp LC(TAB)     &trans
+&trans  &trans  &trans  &trans  &trans  &mkp MB3            &mkp MB1             &mkp MB2         &mo 5           &none
+&trans  &trans  &trans  &trans  &trans  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &msc SCRL_UP     &msc SCRL_DOWN  &trans
+&trans  &trans          &trans  &trans  &trans              &trans                                &trans          &trans
             >;
         };
 
