@@ -192,10 +192,10 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
 
             bindings = <
-&kp ESC         &kp TAB        &kp UP         &kp LS(NUMBER_1)  &kp LS(SLASH)  &kp MINUS      &kp PLUS   &kp LS(INT3)      &kp LS(NUMBER_8)   &kp LS(NUMBER_9)
-&kp TAB         &kp LEFT       &kp DOWN       &kp RIGHT         &kp MINUS      &kp SEMICOLON  &kp COLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-&kp LEFT_SHIFT  &kp BACKSLASH  &kp LS(EQUAL)  &kp COMMA         &kp PERIOD     &kp INT3       &kp AT     &kp UNDERSCORE    &kp SLASH          &kp LEFT_SHIFT
-&trans          &trans                        &trans            &trans         &kp DELETE     &kp ENTER                    &none              &kp LEFT_CONTROL
+&kp ESC         &kp TAB        &kp UP         &kp LS(NUMBER_1)  &kp LS(SLASH)  &kp MINUS      &kp PLUS   &kp LS(INT3)         &kp LS(NUMBER_8)   &kp LS(NUMBER_9)
+&kp TAB         &kp LEFT       &kp DOWN       &kp RIGHT         &kp MINUS      &kp SEMICOLON  &kp COLON  &kp LEFT_BRACKET     &kp RIGHT_BRACKET  &kp BACKSLASH
+&kp LEFT_SHIFT  &kp BACKSLASH  &kp LS(EQUAL)  &kp COMMA         &kp PERIOD     &kp INT3       &kp AT     &kp INTERNATIONAL_1  &kp SLASH          &kp LEFT_SHIFT
+&trans          &trans                        &trans            &trans         &kp DELETE     &kp ENTER                       &none              &kp LEFT_CONTROL
             >;
         };
 
