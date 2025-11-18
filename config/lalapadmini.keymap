@@ -217,7 +217,7 @@
 
             bindings = <
 &bt BT_CLR_ALL  &bt BT_CLR    &none         &none         &bootloader   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&none           &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
+&kp A           &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
 &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans        &none         &none         &none         &bt BT_CLR
 &bootloader     &trans                      &trans        &trans        &trans        &trans                      &none         &bt BT_CLR_ALL
             >;
@@ -264,12 +264,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        System_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
